@@ -1,0 +1,41 @@
+============================================================
+                        GRADE REPORT                        
+                   Generated: 2026-05-03                    
+============================================================
+
+  CLASS SUMMARY
+------------------------------------------------------------
+  Total students:             15
+  Class average:              79.4
+  Highest average:            95.2
+  Lowest average:             58.2
+
+  GRADE DISTRIBUTION
+------------------------------------------------------------
+  A     ███  3
+  B     ████  4
+  C     █████  5
+  D     ██  2
+  F     █  1
+
+  INDIVIDUAL RESULTS
+------------------------------------------------------------
+  Name                   Average  Grade   Subjects
+------------------------------------------------------------
+  Eve Williams              95.2  A       4/4
+  Noah Garcia               93.0  A       4/4
+  Alice Johnson             91.5  A       4/4
+  Jack Taylor               89.0  B       4/4
+  Grace Lee                 86.8  B       4/4
+  Charlie Brown             86.5  B       4/4
+  Liam Martinez             84.8  B       4/4
+  Bob Smith                 79.7  C       3/4  (1 missing)
+  Henry Davis               78.7  C       3/4  (1 missing)
+  Kate Anderson             76.5  C       4/4
+  Diana Prince              70.0  C       2/4  (2 missing)
+  Frank Miller              70.0  C       4/4
+  Olivia White              69.5  D       4/4
+  Iris Wilson               62.0  D       4/4
+  Mia Thompson              58.2  F       4/4
+
+============================================================
