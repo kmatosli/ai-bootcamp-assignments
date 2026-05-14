@@ -83,6 +83,19 @@ class Drug:
         self.in_use = False
         print(f"  ✓ Returned: {self.name}")
 
+    # ── Rubric-compatibility aliases ─────────────────────────────────────────
+    # The bootcamp rubric uses Book / EBook / Catalog vocabulary (check_out,
+    # return_book). These aliases delegate to the Caduceus-named methods so
+    # the rubric's verbatim test snippet runs without modification.
+
+    def check_out(self) -> None:
+        """Rubric alias for dispense() — see Drug.dispense."""
+        self.dispense()
+
+    def return_book(self) -> None:
+        """Rubric alias for return_drug() — see Drug.return_drug."""
+        self.return_drug()
+
     # ── Dunder methods (bonus: Dunder Methods Deep Dive) ─────────────────────
 
     def __repr__(self) -> str:
@@ -248,6 +261,23 @@ class DrugCatalog:
         print(f"  Currently in use:    {total - available}")
         print("─" * 60)
 
+    # ── Rubric-compatibility aliases ─────────────────────────────────────────
+    # The bootcamp rubric uses Catalog vocabulary (add_book, search_by_author,
+    # search_by_title). These aliases delegate to the Caduceus-named methods
+    # so the rubric's verbatim test snippet runs without modification.
+
+    def add_book(self, drug: Drug) -> None:
+        """Rubric alias for add_drug() — see DrugCatalog.add_drug."""
+        self.add_drug(drug)
+
+    def search_by_author(self, author: str) -> List[Drug]:
+        """Rubric alias for search_by_manufacturer()."""
+        return self.search_by_manufacturer(author)
+
+    def search_by_title(self, keyword: str) -> List[Drug]:
+        """Rubric alias for search_by_name()."""
+        return self.search_by_name(keyword)
+
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Demo / test harness — exercises every required behavior
@@ -328,6 +358,22 @@ def _demo() -> None:
 
     # ── Final summary ──────────────────────────────────────────────────────
     catalog.summary()
+
+    # ── Rubric-aliases smoke test ─────────────────────────────────────────
+    # Demonstrate that the rubric's verbatim method names work, mapped to the
+    # Caduceus domain (Drug = Book, BiologicDrug = EBook, DrugCatalog = Catalog).
+    print("\n[8] Rubric-aliases smoke test:")
+    rubric_cat = DrugCatalog()
+    rubric_cat.add_book(Drug("Python Crash Course", "Eric Matthes", 2019))
+    rubric_cat.add_book(Drug("Clean Code", "Robert Martin", 2008))
+    rubric_cat.add_book(BiologicDrug("AI Engineering", "Chip Huyen", 2025, modality="ADC"))
+
+    results = rubric_cat.search_by_title("python")
+    print(f"    search_by_title('python') -> {results}")
+
+    rubric_cat.books[0].check_out()
+    available = rubric_cat.get_available()
+    print(f"    Available: {len(available)} books")
 
 
 if __name__ == "__main__":
