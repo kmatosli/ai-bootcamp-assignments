@@ -1,0 +1,90 @@
+======================================================================
+CADUCEUS — PHASE 1 PHARMA UNIVERSE — FY2024 FINANCIALS
+Source: SEC 10-K filings, extracted via edgartools adapter
+======================================================================
+ticker              company therapeutic_category  revenue_usd_b  rd_intensity_pct  profitable
+   PFE               Pfizer   Diversified Pharma         63.627              16.8        True
+   MRK                Merck   Diversified Pharma         64.168              18.3        True
+   JNJ    Johnson & Johnson   Diversified Pharma         88.821              17.2        True
+  ABBV               AbbVie   Diversified Pharma         56.334              13.5        True
+   BMY Bristol-Myers Squibb            Biopharma         48.300              22.4       False
+   LLY            Eli Lilly            Biopharma         45.043              24.1        True
+  AMGN                Amgen            Biopharma         33.424              17.8        True
+  GILD               Gilead            Biopharma         28.754              19.6        True
+
+
+──────────────────────────────────────────────────────────────────────
+Q1: How many filers in each therapeutic category?
+──────────────────────────────────────────────────────────────────────
+therapeutic_category
+Diversified Pharma    4
+Biopharma             4
+Name: count, dtype: int64
+
+──────────────────────────────────────────────────────────────────────
+Q2: Average FY2024 revenue per therapeutic category ($B)
+──────────────────────────────────────────────────────────────────────
+therapeutic_category
+Biopharma             38.88
+Diversified Pharma    68.24
+Name: revenue_usd_b, dtype: float64
+
+──────────────────────────────────────────────────────────────────────
+Q3: Top 3 filers by FY2024 revenue
+──────────────────────────────────────────────────────────────────────
+ticker           company  revenue_usd_b
+   JNJ Johnson & Johnson         88.821
+   MRK             Merck         64.168
+   PFE            Pfizer         63.627
+
+──────────────────────────────────────────────────────────────────────
+Q4: Average R&D intensity — profitable vs unprofitable filers
+──────────────────────────────────────────────────────────────────────
+profitable
+False    22.40
+True     18.19
+Name: rd_intensity_pct, dtype: float64
+
+Note: BMY is the only unprofitable filer (post-Karuna IPR&D charge).
+Its 22.4% R&D intensity drives the group average single-handedly.
+
+──────────────────────────────────────────────────────────────────────
+Q5: Create a size_tier column based on FY2024 revenue
+──────────────────────────────────────────────────────────────────────
+ticker  revenue_usd_b size_tier
+   PFE         63.627  Mega-Cap
+   MRK         64.168  Mega-Cap
+   JNJ         88.821  Mega-Cap
+  ABBV         56.334 Large-Cap
+   BMY         48.300 Large-Cap
+   LLY         45.043 Large-Cap
+  AMGN         33.424 Mid-Large
+  GILD         28.754   Mid-Cap
+
+──────────────────────────────────────────────────────────────────────
+Q6: Distribution of size tiers per therapeutic category
+──────────────────────────────────────────────────────────────────────
+size_tier             Mega-Cap  Large-Cap  Mid-Large  Mid-Cap
+therapeutic_category                                         
+Biopharma                    0          2          1        1
+Diversified Pharma           3          1          0        0
+
+======================================================================
+BUY-SIDE ANALYST TAKEAWAY
+======================================================================
+
+The two coverage groups split cleanly by scale: Diversified Pharma
+holds all 3 Mega-Cap names (JNJ, MRK, PFE) plus one Large-Cap (ABBV).
+Biopharma is entirely Large-Cap and below.
+
+Revenue-weighted, Diversified Pharma averages ~$68B vs Biopharma's
+~$39B — but Biopharma carries 21% R&D intensity on average vs
+Diversified's 16%. That 5pp gap is the reinvestment premium for
+narrower TA exposure: smaller revenue base, more investment into
+pipeline as a share of sales.
+
+Only one filer ran a GAAP loss in FY2024 (BMY, post-Karuna IPR&D
+charge), so the "passed vs failed" comparison from the rubric maps
+poorly here — useful as a sanity check that the data joins are
+correct, not as a thesis-generating signal.
+
