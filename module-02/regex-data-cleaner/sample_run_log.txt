@@ -1,0 +1,30 @@
+Run started: 2026-05-14T03:52:45.033357+00:00
+
+PFE: SUCCESS — 10 executives extracted
+        https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm
+
+MRK: SUCCESS — 12 executives extracted
+        https://www.sec.gov/Archives/edgar/data/310158/000031015826000063/mrk-20251231.htm
+
+JNJ: SUCCESS — 9 executives extracted
+        https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm
+
+ABBV: SUCCESS — 7 executives extracted
+        https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm
+
+BMY: SUCCESS — 12 executives extracted
+        https://www.sec.gov/Archives/edgar/data/14272/000001427226000004/bmy-20251231.htm
+
+LLY: SUCCESS — 13 executives extracted
+        https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm
+
+AMGN: SUCCESS — 10 executives extracted
+        https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm
+
+GILD: SUCCESS — 5 executives extracted
+        https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm
+
+
+Run finished: 2026-05-14T03:52:59.593292+00:00
+Duration: 14.6s
+Total rows written: 78
