@@ -1,0 +1,79 @@
+===========================================================================
+CADUCEUS — FUNCTIONAL PROCESSING ACROSS PHASE 1 PHARMA UNIVERSE
+Source: SEC 10-K filings via edgartools adapter
+===========================================================================
+Starting set: 8 securities
+
+───────────────────────────────────────────────────────────────────────────
+Op 1: Filter to active coverage securities
+───────────────────────────────────────────────────────────────────────────
+  PFE    Pfizer
+  MRK    Merck
+  ABBV   AbbVie
+  BMY    Bristol-Myers Squibb
+  LLY    Eli Lilly
+  GILD   Gilead
+  → 6 active securities
+
+───────────────────────────────────────────────────────────────────────────
+Op 2: Map — apply 15% recession-scenario haircut to revenue (new dicts)
+───────────────────────────────────────────────────────────────────────────
+  PFE    base $ 63.63B → stressed $ 54.08B
+  MRK    base $ 64.17B → stressed $ 54.54B
+  JNJ    base $ 88.82B → stressed $ 75.50B
+  ABBV   base $ 56.33B → stressed $ 47.88B
+  ...and 4 more.
+  ✓ Original list unchanged: 'stressed_revenue' not in input dicts
+
+───────────────────────────────────────────────────────────────────────────
+Op 3: Filter — biopharma under $50B revenue (mid-cap biopharma screen)
+───────────────────────────────────────────────────────────────────────────
+  BMY    Bristol-Myers Squibb      $ 48.30B
+  LLY    Eli Lilly                 $ 45.04B
+  AMGN   Amgen                     $ 33.42B
+  GILD   Gilead                    $ 28.75B
+  → 4 matches
+
+───────────────────────────────────────────────────────────────────────────
+Op 4: Sort by FY2024 revenue, ascending (universe ranking)
+───────────────────────────────────────────────────────────────────────────
+  $ 28.75B  GILD   Gilead
+  $ 33.42B  AMGN   Amgen
+  $ 45.04B  LLY    Eli Lilly
+  $ 48.30B  BMY    Bristol-Myers Squibb
+  $ 56.33B  ABBV   AbbVie
+  $ 63.63B  PFE    Pfizer
+  $ 64.17B  MRK    Merck
+  $ 88.82B  JNJ    Johnson & Johnson
+
+───────────────────────────────────────────────────────────────────────────
+Op 5: Sum — total revenue across active coverage set
+───────────────────────────────────────────────────────────────────────────
+  via sum + generator expression: $ 306.23B
+  via functools.reduce:           $ 306.23B
+  ✓ Both functional patterns agree
+
+───────────────────────────────────────────────────────────────────────────
+Op 6: Group by sub-industry → dict of {sub_industry: [securities]}
+───────────────────────────────────────────────────────────────────────────
+  diversified_pharma     (4 names, $272.95B): PFE, MRK, JNJ, ABBV
+  biopharma              (4 names, $155.52B): BMY, LLY, AMGN, GILD
+
+===========================================================================
+BUY-SIDE ANALYST TAKEAWAY
+===========================================================================
+
+The functional pipeline produces a working portfolio screening workflow:
+  Op 1: Identify which names are in the active coverage set (6 of 8)
+  Op 2: Apply a recession-scenario stress haircut without mutating positions
+  Op 3: Surface the sub-$50B biopharma opportunity set (4 names)
+  Op 4: Rank by scale for portfolio construction (smallest → largest)
+  Op 5: Quantify total active-coverage revenue exposure (~$306B)
+  Op 6: Bucket into sub-industries for sector-tilt analysis
+
+Functional patterns are non-negotiable in production quant code because they
+make data transformations auditable and composable. Each operation returns a
+new collection; no operation mutates input. The same six primitives — filter,
+map, sort, sum, reduce, group — underpin every screen and backtest at the
+desk.
+
