@@ -1,0 +1,15 @@
+﻿# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Diagnostic / scratch scripts
+_*.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,6 @@
+pandas>=2.0
+matplotlib>=3.7
+
+# Optional: only needed for live Supabase mode (DATABASE_URL set)
+# psycopg2-binary>=2.9
+# python-dotenv>=1.0
