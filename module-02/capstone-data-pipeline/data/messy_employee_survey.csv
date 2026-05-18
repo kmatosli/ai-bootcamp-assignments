@@ -1,0 +1,201 @@
+employee_id,name,department,office_location,salary,years_experience,satisfaction_score,survey_date,comments
+EMP1654,AMENNAI BEYEEN,Onc,New York,-278061,18,14,2024-01-17,More cross-functional collaboration needed.
+EMP1223,LIU WEI,data engineering,london,142787,28,,"March 22, 2024",Would benefit from clearer OKRs.
+EMP1284,JAMES WILSON,Cardio,Basel CH,243263,,2,2024-07-12,Need more headcount in data engineering.
+EMP1300,Liu Wei,ONCOLOGY,STOCKHOLM,97012,3,2,13-Jul-2024,
+EMP1650,Kathy Matosli,Cardiovascular,STOCKHOLM,244680,8,7,05/18/2024,Would benefit from clearer OKRs.
+EMP1863,  Kaspar Hållsten  ,CARDIOVASCULAR,London,"$155,186",19,6,"April 18, 2024",The Caduceus platform has improved my workflow significantly.
+EMP1905,CARLOS MENDEZ,data engineering,Basel,238245,12,3,"September 17, 2024",More cross-functional collaboration needed.
+EMP1654,Camilla Oxhamre Cruse,rare disease,STOCKHOLM,185864,17,9,2024-01-06,Need more headcount in data engineering.
+EMP1768,JAMES WILSON,RARE DISEASE,Stockholm,274292,17,9,24-Feb-2024,Need more headcount in data engineering.
+EMP1623,Sarah O'Brien,Data Engineering,Stockholm,242009,,5,2024-05-02,Excellent tools and data infrastructure.
+EMP1899,HUGO SCHMIDT,BIOPHARMA RESEARCH,New York,118657,6,10,08/04/2024,Need more headcount in data engineering.
+EMP1773,Lars Eriksson,Cardio,LONDON,220679,3,10,10/10/2024,Satisfied with current role.
+EMP1773,Kaspar Hållsten,CARDIOVASCULAR,STOCKHOLM,219782,7,10,"October 22, 2024",Excellent tools and data infrastructure.
+EMP1803,  Yuki Tanaka  ,rare disease,Basel CH,196038,2,2,"February 01, 2024",Would benefit from clearer OKRs.
+EMP1819,Anna Lindberg,Oncology,london,133100,30,15,2024-02-20,Need more headcount in data engineering.
+EMP1223,Anna Lindberg,ONCOLOGY,London,100370,,8,"May 26, 2024",Need more headcount in data engineering.
+EMP1677,Camilla Oxhamre Cruse,biopharma research,stockholm,"$167,209",17,9,2024-03-21,Need more headcount in data engineering.
+EMP1082,Hugo Schmidt,Onc,London,116427,19,10,"February 11, 2024",Satisfied with current role.
+EMP1578,David Chen,Onc,Basel,N/A,15,2,"January 05, 2024",Satisfied with current role.
+EMP1576,Hugo Schmidt,Oncology,Basel CH,103033,6,9,26-Dec-2024,Satisfied with current role.
+EMP1826,Henrik Rhenman,Bio Pharma,New York,-154328,18,5,11/05/2024,Would benefit from clearer OKRs.
+EMP1208,David Chen,biopharma research,STOCKHOLM,251273,1,3,22-Nov-2024,
+EMP1759,Yuki Tanaka,Oncology,stockholm,181787,5,,2024-07-05,Would benefit from clearer OKRs.
+EMP1215,Amennai Beyeen,rare disease,New York,147059,26,7,01/13/2024,Would benefit from clearer OKRs.
+EMP1801,Anna Lindberg,Bio Pharma,London,95151,27,6,06/05/2024,Excellent tools and data infrastructure.
+EMP1024,Pierre Dupont,Cardiovascular,Basel CH,253160,27,1,29-Feb-2024,
+EMP1594,DAVID CHEN,Cardio,BASEL,199398,13,4,2024-05-10,The Caduceus platform has improved my workflow significantly.
+EMP1001,Priya Sharma,ONCOLOGY,Basel CH,"$198,062",11,2,02-Jun-2024,The Caduceus platform has improved my workflow significantly.
+EMP1334,Maria Santos,Rare Disease,new york,246353,27,,05/26/2024,The Caduceus platform has improved my workflow significantly.
+EMP1804,James Wilson,ONCOLOGY,  London,277927,-3,10,2024-06-20,Excellent tools and data infrastructure.
+EMP1688,  LARS ERIKSSON  ,Rare,STOCKHOLM,204384,7,7,"September 10, 2024",Excellent tools and data infrastructure.
+EMP1151,Henrik Rhenman,Bio Pharma,london,142367,17,9,2024-05-07,
+EMP1136,Michael Brown,RARE DISEASE,london,228621,28,5,06-May-2024,Need more headcount in data engineering.
+EMP1496,David Chen,Onc,Basel,173040,5,7,12/21/2024,Excellent tools and data infrastructure.
+EMP1065,James Wilson,ONCOLOGY,london,187099,23,,"October 21, 2024",
+EMP1006,Maria Santos,rare disease,New York ,212986,1,7,"March 25, 2024",
+EMP1637,Pierre Dupont,BIOPHARMA RESEARCH,london,120572,9,4,20-Aug-2024,Would benefit from clearer OKRs.
+EMP1779,David Chen,Cardiovascular,STOCKHOLM,,12,2,2024-11-29,"Great team, strong pipeline focus."
+EMP1972,Henrik Rhenman,Rare, Stockholm ,232841,9,3,2024-11-06,
+EMP1987,THOMAS WEBER,Rare Disease,London,272436,27,2,22-Dec-2024,Satisfied with current role.
+EMP1824,Thomas Weber,rare disease,Basel CH,103076,28,8,"February 24, 2024",Would benefit from clearer OKRs.
+EMP1650,Carlos Mendez,Data Engineering,Basel,246457,16,10,17-May-2024,Excellent tools and data infrastructure.
+EMP1850,David Chen,RARE DISEASE,London,,6,6,12-May-2024,
+EMP1901,David Chen,ONCOLOGY,STOCKHOLM,148270,25,8,"November 26, 2024",
+EMP1578,Anna Lindberg,DATA ENGINEERING,Basel CH,209062,24,6,"December 25, 2024",
+EMP1313,Amennai Beyeen,data engineering,new york,135211,24,9,01-Nov-2024,More cross-functional collaboration needed.
+EMP1852,Anna Lindberg,data engineering,New York,,,3,"November 22, 2024",More cross-functional collaboration needed.
+EMP1578,Emma Johansson,biopharma research,Basel,-210233,150,10,2024-11-18,
+EMP1152,MARIA SANTOS,data engineering,london,243942,25,8,14-Aug-2024,Satisfied with current role.
+EMP1439,LIU WEI,Bio Pharma,NYC,248975,6,9,02/08/2024,"Great team, strong pipeline focus."
+EMP1418,  Liu Wei  ,cardiovascular,basel,269283,150,5,11/16/2024,The Caduceus platform has improved my workflow significantly.
+EMP1117,Camilla Oxhamre Cruse,BIOPHARMA RESEARCH,stockholm,128495,27,5,2024-08-12,
+EMP1705,Pierre Dupont,Rare,LONDON,106087,24,5,2024-01-14,Excellent tools and data infrastructure.
+EMP1984,  Thomas Weber  ,Cardiovascular,stockholm,130925,30,10,"August 11, 2024",More cross-functional collaboration needed.
+EMP1481,James Wilson,oncology,BASEL,192910,13,9,"January 19, 2024",More cross-functional collaboration needed.
+EMP1322,Amennai Beyeen,Data Engineering,Stockholm,257401,2,6,"November 14, 2024",
+EMP1082,PRIYA SHARMA,Rare, Stockholm ,92567,8,5,2024-10-09,Need more headcount in data engineering.
+EMP1417,Amennai Beyeen,Oncology,  London,272853,14,8,"May 04, 2024",Need more headcount in data engineering.
+EMP1148,Liu Wei,BIOPHARMA RESEARCH,Basel,193774,9,5,"June 01, 2024",
+EMP1457,Sarah O'Brien,Rare Disease,LONDON,169352,8,4,2024-07-29,Would benefit from clearer OKRs.
+EMP1762,Pierre Dupont,Oncology,  London,-94704,11,8,"February 21, 2024","Great team, strong pipeline focus."
+EMP1739,CAMILLA OXHAMRE CRUSE,Cardiovascular,BASEL,248383,28,9,13-Jul-2024,
+EMP1893,LIU WEI,cardiovascular,New York ,108692,-3,2,08/15/2024,
+EMP1826,Kaspar Hållsten,Oncology,New York ,224242,6,2,"November 08, 2024",Satisfied with current role.
+EMP1699,THOMAS WEBER,Cardiovascular,LONDON,151932,15,9,2024-03-21,
+EMP1967,Thomas Weber,Cardiovascular,LONDON,164199,16,0,14-Jul-2024,Satisfied with current role.
+EMP1302,MARIA SANTOS,Rare Disease,Basel,87122,24,10,11-Sep-2024,Excellent tools and data infrastructure.
+EMP1621,Anna Lindberg,Oncology, Stockholm ,249484,15,,07/05/2024,More cross-functional collaboration needed.
+EMP1931,Yuki Tanaka,data engineering,Basel CH,224159,6,8,31-May-2024,More cross-functional collaboration needed.
+EMP1479,Camilla Oxhamre Cruse,Rare Disease,Basel CH,108672,,8,07-Jul-2024,Satisfied with current role.
+EMP1390,SARAH O'BRIEN,Biopharma Research,BASEL,244929,150,5,"November 28, 2024",More cross-functional collaboration needed.
+EMP1650,Maria Santos,Onc,New York,186881,24,9,08/02/2024,The Caduceus platform has improved my workflow significantly.
+EMP1670,Emma Johansson,Cardiovascular,stockholm,265952,8,2,17-Dec-2024,Need more headcount in data engineering.
+EMP1923,SARAH O'BRIEN,Bio Pharma,LONDON,109031,20,1,06/19/2024,
+EMP1805,Hugo Schmidt,DATA ENGINEERING,NYC,146079,29,5,03/15/2024,Need more headcount in data engineering.
+EMP1256,  Amennai Beyeen  ,Biopharma Research,Basel CH,147372,,3,2024-08-03,More cross-functional collaboration needed.
+EMP1487,Sarah O'Brien,Data Engineering,New York ,,28,5,2024-08-22,"Great team, strong pipeline focus."
+EMP1490,Yuki Tanaka,RARE DISEASE,STOCKHOLM,106178,5,10,07-Oct-2024,The Caduceus platform has improved my workflow significantly.
+EMP1611,Carlos Mendez,Bio Pharma,NYC,197740,11,7,2024-07-31,Would benefit from clearer OKRs.
+EMP1437,David Chen,Rare,STOCKHOLM,108914,-3,0,07/09/2024,Need more headcount in data engineering.
+EMP1061,Priya Sharma,rare disease,Basel CH,259415,30,5,03-Nov-2024,Would benefit from clearer OKRs.
+EMP1106,Lars Eriksson,Bio Pharma,Basel CH,230821,19,7,2024-10-14,Satisfied with current role.
+EMP1951,DAVID CHEN,cardiovascular,BASEL,,19,2,2024-03-13,More cross-functional collaboration needed.
+EMP1764,Pierre Dupont,Cardio,basel,274162,20,11,03/20/2024,Satisfied with current role.
+EMP1050,David Chen,DataEng,LONDON,193575,4,2,"May 25, 2024",Need more headcount in data engineering.
+EMP1683,Anna Lindberg,Biopharma Research,NYC,164015,25,6,2024-03-02,
+EMP1764,Camilla Oxhamre Cruse,Data Engineering,Basel CH,103894,14,,09-Feb-2024,Satisfied with current role.
+EMP1439,Yuki Tanaka,CARDIOVASCULAR,new york,247037,12,11,"May 04, 2024",Satisfied with current role.
+EMP1410,Pierre Dupont,Onc,BASEL,"$129,074",17,6,06/28/2024,Excellent tools and data infrastructure.
+EMP1105,Lars Eriksson,BIOPHARMA RESEARCH,new york,249613,25,10,25-Nov-2024,Would benefit from clearer OKRs.
+EMP1154,Emma Johansson,Cardiovascular,stockholm,177259,15,,07-Jul-2024,More cross-functional collaboration needed.
+EMP1660,Hugo Schmidt,RARE DISEASE,stockholm,202894,7,8,09/13/2024,"Great team, strong pipeline focus."
+EMP1461,  James Wilson  ,oncology,stockholm,149944,17,3,05-Jul-2024,
+EMP1396,  James Wilson  ,CARDIOVASCULAR,STOCKHOLM,"$171,426",10,10,17-Mar-2024,More cross-functional collaboration needed.
+EMP1596,Sarah O'Brien,Rare Disease,New York,240986,-3,6,2024-03-06,The Caduceus platform has improved my workflow significantly.
+EMP1520,Sarah O'Brien,CARDIOVASCULAR,  London,135333,3,2,2024-09-16,Would benefit from clearer OKRs.
+EMP1897,Camilla Oxhamre Cruse,oncology,new york,274053,22,8,08-Nov-2024,
+EMP1239,Maria Santos,ONCOLOGY,Basel CH,262814,15,7,"September 14, 2024",
+EMP1836,LIU WEI,Rare,Basel CH,230369,17,5,02/12/2024,
+EMP1460,  Camilla Oxhamre Cruse  ,Onc,LONDON,176641,13,4,2024-07-16,Would benefit from clearer OKRs.
+EMP1773,James Wilson,cardiovascular,  London,267471,16,1,2024-02-10,
+EMP1220,Priya Sharma,rare disease, Stockholm ,160524,8,10,2024-08-22,More cross-functional collaboration needed.
+EMP1856,Liu Wei,DATA ENGINEERING,New York ,N/A,20,10,08/01/2024,More cross-functional collaboration needed.
+EMP1536,Hugo Schmidt,Data Engineering,Stockholm,187355,,6,2024-05-09,Would benefit from clearer OKRs.
+EMP1688,Amennai Beyeen,CARDIOVASCULAR,New York,96622,21,8,"December 22, 2024",
+EMP1830,CARLOS MENDEZ,ONCOLOGY,stockholm,167731,27,5,01/19/2024,
+EMP1365,Kaspar Hållsten,Bio Pharma,Basel CH,199544,29,6,"April 05, 2024",
+EMP1376,  Michael Brown  ,rare disease,STOCKHOLM,197881,18,2,10-Feb-2024,
+EMP1313,Yuki Tanaka,RARE DISEASE,stockholm,275530,14,1,"February 08, 2024",Would benefit from clearer OKRs.
+EMP1525,Kathy Matosli,DataEng,LONDON,-94122,21,7,2024-10-17,Satisfied with current role.
+EMP1157,Sarah O'Brien,DATA ENGINEERING,New York,223794,9,2,01/14/2024,
+EMP1530,PRIYA SHARMA,RARE DISEASE,NYC,245399,16,3,"February 07, 2024",
+EMP1920,Hugo Schmidt,CARDIOVASCULAR,Basel CH,"$271,001",29,3,12/30/2024,Would benefit from clearer OKRs.
+EMP1520,Lars Eriksson,Rare,Stockholm,179606,26,3,2024-11-09,More cross-functional collaboration needed.
+EMP1316,Emma Johansson,DATA ENGINEERING,STOCKHOLM,117853,15,9,06/25/2024,Need more headcount in data engineering.
+EMP1655,Camilla Oxhamre Cruse,biopharma research, Stockholm ,220817,11,4,26-Jun-2024,More cross-functional collaboration needed.
+EMP1256,Priya Sharma,DataEng,STOCKHOLM,216746,19,10,05-Nov-2024,Satisfied with current role.
+EMP1042,HENRIK RHENMAN,DATA ENGINEERING,Basel,255689,20,8,17-Nov-2024,
+EMP1494,  Pierre Dupont  ,biopharma research,new york,200239,11,6,12-Jun-2024,The Caduceus platform has improved my workflow significantly.
+EMP1133,Michael Brown,RARE DISEASE, Stockholm ,155116,2,7,"November 11, 2024",Excellent tools and data infrastructure.
+EMP1985,Kathy Matosli,CARDIOVASCULAR,NYC,126770,16,8,2024-01-12,The Caduceus platform has improved my workflow significantly.
+EMP1517,Anna Lindberg,biopharma research,basel,214733,22,9,2024-01-05,The Caduceus platform has improved my workflow significantly.
+EMP1137,Sarah O'Brien,Rare Disease,stockholm,234495,10,15,18-Aug-2024,Satisfied with current role.
+EMP1696,Camilla Oxhamre Cruse,CARDIOVASCULAR,Basel CH,122818,17,,01/20/2024,Would benefit from clearer OKRs.
+EMP1823,CARLOS MENDEZ,Oncology,BASEL,245712,20,5,30-Oct-2024,Need more headcount in data engineering.
+EMP1848,Emma Johansson,Biopharma Research,Basel CH,171832,19,1,"November 01, 2024",
+EMP1990,Thomas Weber,DATA ENGINEERING,  London,129698,25,3,12/14/2024,"Great team, strong pipeline focus."
+EMP1586,Amennai Beyeen,rare disease,New York,193255,25,8,02/01/2024,Need more headcount in data engineering.
+EMP1212,Emma Johansson,oncology,LONDON,224756,25,5,"November 08, 2024",Excellent tools and data infrastructure.
+EMP1980,Priya Sharma,cardiovascular,basel,269785,11,9,20-May-2024,More cross-functional collaboration needed.
+EMP1587,Pierre Dupont,Cardio,New York,,3,8,01-Dec-2024,
+EMP1219,Priya Sharma,Cardiovascular,New York,113633,8,,09/28/2024,Excellent tools and data infrastructure.
+EMP1053,James Wilson,Oncology,Stockholm,229271,21,8,09/01/2024,
+EMP1328,  Kaspar Hållsten  ,DATA ENGINEERING,New York ,225286,2,3,08/01/2024,"Great team, strong pipeline focus."
+EMP1856,Emma Johansson,cardiovascular,stockholm,87429,30,5,"August 20, 2024",
+EMP1871,David Chen,oncology,LONDON,254944,24,5,10/17/2024,
+EMP1625,Pierre Dupont,BIOPHARMA RESEARCH,London,"$260,441",16,4,04-Jan-2024,The Caduceus platform has improved my workflow significantly.
+EMP1241,David Chen,DATA ENGINEERING,Stockholm,153564,2,8,06/06/2024,The Caduceus platform has improved my workflow significantly.
+EMP1702,Maria Santos,cardiovascular,Basel CH,246120,16,10,"July 10, 2024",Need more headcount in data engineering.
+EMP1934,Priya Sharma,Onc,STOCKHOLM,222758,3,2,02/01/2024,Satisfied with current role.
+EMP1549,James Wilson,ONCOLOGY,  London,108839,2,9,"July 31, 2024",Satisfied with current role.
+EMP1059,Maria Santos,Biopharma Research,NYC,"$236,600",23,11,"February 05, 2024","Great team, strong pipeline focus."
+EMP1293,Camilla Oxhamre Cruse,rare disease,Basel CH,185264,13,9,09-Mar-2024,More cross-functional collaboration needed.
+EMP1182,Pierre Dupont,Onc,Stockholm,90959,24,9,07/13/2024,Excellent tools and data infrastructure.
+EMP1471,David Chen,Bio Pharma,stockholm,258066,29,4,2024-04-15,More cross-functional collaboration needed.
+EMP1773,Anna Lindberg,Onc,NYC,N/A,8,10,12-Jun-2024,Excellent tools and data infrastructure.
+EMP1309,Michael Brown,biopharma research,new york,249100,2,7,25-Sep-2024,The Caduceus platform has improved my workflow significantly.
+EMP1418,Pierre Dupont,Onc,New York ,163836,15,9,"July 30, 2024",Need more headcount in data engineering.
+EMP1542,Anna Lindberg,BIOPHARMA RESEARCH,LONDON,"$182,275",7,,2024-07-12,More cross-functional collaboration needed.
+EMP1192,Thomas Weber,Rare,NYC,172284,7,2,09/02/2024,Satisfied with current role.
+EMP1720,Anna Lindberg,Rare Disease,LONDON,224893,12,8,2024-08-26,
+EMP1779,Lars Eriksson,DATA ENGINEERING,New York ,N/A,30,7,05/31/2024,Excellent tools and data infrastructure.
+EMP1337,Thomas Weber,CARDIOVASCULAR,Basel,213089,16,6,03/27/2024,Need more headcount in data engineering.
+EMP1500,Priya Sharma,Data Engineering,stockholm,104485,25,,03/11/2024,More cross-functional collaboration needed.
+EMP1724,Lars Eriksson,DataEng,  London,257827,,1,09-Jan-2024,Need more headcount in data engineering.
+EMP1157,  KATHY MATOSLI  ,Oncology,New York ,135313,12,7,10-Feb-2024,The Caduceus platform has improved my workflow significantly.
+EMP1470,Anna Lindberg,BIOPHARMA RESEARCH,stockholm,109510,16,,01/05/2024,More cross-functional collaboration needed.
+EMP1511,James Wilson,Bio Pharma,stockholm,145231,29,5,2024-01-24,
+EMP1920,Kaspar Hållsten,Biopharma Research,NYC,N/A,27,2,06/02/2024,Satisfied with current role.
+EMP1246,Pierre Dupont,Rare Disease,New York,265698,12,,08/11/2024,More cross-functional collaboration needed.
+EMP1348,Liu Wei,CARDIOVASCULAR,Stockholm,251231,16,9,"July 11, 2024",
+EMP1696,PIERRE DUPONT,Onc,STOCKHOLM,106505,26,7,11-Jun-2024,More cross-functional collaboration needed.
+EMP1611,Carlos Mendez,Oncology,STOCKHOLM,134123,17,1,15-Feb-2024,Need more headcount in data engineering.
+EMP1095,  James Wilson  ,rare disease,London,107203,8,3,"December 16, 2024",
+EMP1142,  David Chen  ,rare disease,Basel,195389,12,4,"November 16, 2024",Satisfied with current role.
+EMP1631,  AMENNAI BEYEEN  ,Rare Disease,BASEL,247579,15,10,10-Mar-2024,Would benefit from clearer OKRs.
+EMP1617,Lars Eriksson,Rare Disease,BASEL,161401,19,6,11-Jul-2024,The Caduceus platform has improved my workflow significantly.
+EMP1373,Thomas Weber,oncology,Stockholm,275634,15,2,"July 28, 2024",
+EMP1648,David Chen,Rare Disease,STOCKHOLM,202720,13,7,2024-10-05,Would benefit from clearer OKRs.
+EMP1718,Priya Sharma,Bio Pharma,New York ,257386,20,,"November 26, 2024",Would benefit from clearer OKRs.
+EMP1988,AMENNAI BEYEEN,Data Engineering,New York ,201858,22,9,18-Mar-2024,"Great team, strong pipeline focus."
+EMP1494,  Yuki Tanaka  ,Oncology,Basel CH,166760,17,8,"February 19, 2024",
+EMP1773,AMENNAI BEYEEN,Bio Pharma,new york,279114,6,7,08/24/2024,The Caduceus platform has improved my workflow significantly.
+EMP1644,Yuki Tanaka,ONCOLOGY,LONDON,240242,,5,2024-12-26,Satisfied with current role.
+EMP1104,Priya Sharma,RARE DISEASE, Stockholm ,153774,21,7,"November 08, 2024",Satisfied with current role.
+EMP1116,Carlos Mendez,cardiovascular,STOCKHOLM,N/A,10,6,12/21/2024,Need more headcount in data engineering.
+EMP1397,Camilla Oxhamre Cruse,Rare,new york,230467,6,8,2024-11-13,Would benefit from clearer OKRs.
+EMP1065,Lars Eriksson,Data Engineering,  London,192252,27,3,2024-02-12,Excellent tools and data infrastructure.
+EMP1417,Priya Sharma,DATA ENGINEERING,  London,229107,9,6,2024-10-04,
+EMP1559,YUKI TANAKA,Onc,basel,93449,27,11,05/01/2024,Satisfied with current role.
+EMP1705,Liu Wei,Oncology,NYC,139248,18,9,27-Mar-2024,
+EMP1296,Michael Brown,Bio Pharma,New York,192897,28,3,05/07/2024,Would benefit from clearer OKRs.
+EMP1848,Pierre Dupont,Cardiovascular,london,183349,29,7,20-Sep-2024,Would benefit from clearer OKRs.
+EMP1465,James Wilson,BIOPHARMA RESEARCH,LONDON,251419,3,7,"April 21, 2024",Excellent tools and data infrastructure.
+EMP1506,Maria Santos,DATA ENGINEERING,  London,175109,2,0,2024-08-23,More cross-functional collaboration needed.
+EMP1951,Carlos Mendez,rare disease,NYC,265510,10,5,17-Feb-2024,
+EMP1084,KATHY MATOSLI,Onc,london,"$256,831",-3,2,03/08/2024,Need more headcount in data engineering.
+EMP1696,Henrik Rhenman,rare disease,New York,"$210,226",24,2,09-Jun-2024,
+EMP1140,Camilla Oxhamre Cruse,BIOPHARMA RESEARCH,Stockholm,244991,24,3,"July 29, 2024",Excellent tools and data infrastructure.
+EMP1088,Camilla Oxhamre Cruse,Rare Disease,Basel CH,197561,9,4,10-Oct-2024,"Great team, strong pipeline focus."
+EMP1868,Maria Santos,ONCOLOGY,London,162474,26,8,2024-07-16,Excellent tools and data infrastructure.
+EMP1511,Hugo Schmidt,Cardio,BASEL,119598,14,3,2024-08-29,"Great team, strong pipeline focus."
+EMP1621,  LARS ERIKSSON  ,Rare Disease,basel,249776,14,2,11/23/2024,
+EMP1085,Michael Brown,Oncology,BASEL,187427,21,2,"June 07, 2024",Excellent tools and data infrastructure.
+EMP1059,YUKI TANAKA,biopharma research,basel,259608,4,,2024-03-11,
+EMP1508,Michael Brown,Cardiovascular,new york,-182483,9,2,16-Jan-2024,The Caduceus platform has improved my workflow significantly.
+EMP1278,David Chen,BIOPHARMA RESEARCH,  London,204327,,3,07/07/2024,
+EMP1791,Thomas Weber,Data Engineering,Stockholm,96544,,,"July 05, 2024",
+EMP1183,Kaspar Hållsten,rare disease,New York ,169358,11,2,19-Oct-2024,More cross-functional collaboration needed.
+EMP1514,Kaspar Hållsten,biopharma research,London,103068,25,6,"February 14, 2024","Great team, strong pipeline focus."
