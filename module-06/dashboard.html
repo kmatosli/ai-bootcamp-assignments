@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caduceus - Mini Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 24px; background: #f7f8fa; color: #2C333E; }
+    h1 { color: #0F4C81; margin-bottom: 4px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+    .stat { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; text-align: center; }
+    .stat .num { font-size: 36px; font-weight: 700; color: #0F4C81; }
+    .stat .lbl { font-size: 13px; color: #7A8499; margin-top: 4px; }
+    .toolbar { display: flex; gap: 12px; margin-bottom: 16px; }
+    input { flex: 1; padding: 9px 13px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+    button { padding: 9px 18px; background: #0F4C81; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+    button:hover { background: #0a3561; }
+    button.secondary { background: white; color: #0F4C81; border: 1px solid #0F4C81; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+    th { background: #0F4C81; color: white; padding: 10px 14px; text-align: left; font-size: 13px; }
+    td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+    .badge.pending    { background: #fff3cd; color: #856404; }
+    .badge.validated  { background: #d4edda; color: #155724; }
+    .badge.open       { background: #cce5ff; color: #004085; }
+    #updated { font-size: 12px; color: #7A8499; margin-top: 8px; }
+    .error { color: #A54A3A; padding: 12px; background: #f8d7da; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>⚕️ Caduceus Decision Dashboard</h1>
+  <p style="color:#7A8499;margin-top:0">Rhenman &amp; Partners &mdash; connecting to localhost:8000</p>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="stat-total">-</div><div class="lbl">Total Decisions</div></div>
+    <div class="stat"><div class="num" id="stat-open">-</div><div class="lbl">Open</div></div>
+    <div class="stat"><div class="num" id="stat-validated">-</div><div class="lbl">Validated</div></div>
+  </div>
+
+  <div class="toolbar">
+    <input type="text" id="new-ticker" placeholder="Ticker (e.g. LLY)">
+    <input type="text" id="new-rat" placeholder="Rationale (min 10 chars)">
+    <button onclick="addDecision()">Add Decision</button>
+    <button class="secondary" onclick="refreshAll()">Refresh</button>
+  </div>
+  <div id="error-msg"></div>
+  <div id="updated"></div>
+
+  <table>
+    <thead><tr><th>ID</th><th>Ticker</th><th>Action</th><th>Conviction</th><th>Outcome</th><th>Status</th></tr></thead>
+    <tbody id="tbody"><tr><td colspan="6" style="color:#7A8499;text-align:center">Loading...</td></tr></tbody>
+  </table>
+
+  <script>
+    const API = "http://localhost:8000";
+    let token = localStorage.getItem("caduceus_token") || null;
+
+    function showError(msg) {
+      document.getElementById("error-msg").innerHTML = `<div class="error">${msg}</div>`;
+    }
+    function clearError() { document.getElementById("error-msg").innerHTML = ""; }
+
+    async function ensureToken() {
+      if (token) return token;
+      const email = prompt("Email:");
+      const pw    = prompt("Password:");
+      const r = await fetch(`${API}/auth/login`, {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({email, password: pw})
+      });
+      if (!r.ok) { showError("Login failed"); return null; }
+      const d = await r.json();
+      token = d.access_token;
+      localStorage.setItem("caduceus_token", token);
+      return token;
+    }
+
+    async function loadDecisions() {
+      const tok = await ensureToken();
+      if (!tok) return;
+      try {
+        const r = await fetch(`${API}/decisions`, {headers: {"Authorization": `Bearer ${tok}`}});
+        if (r.status === 401) { token = null; localStorage.removeItem("caduceus_token"); loadDecisions(); return; }
+        const data = await r.json();
+        document.getElementById("stat-total").textContent = data.length;
+        document.getElementById("stat-open").textContent = data.filter(d => d.status === "open").length;
+        document.getElementById("stat-validated").textContent = data.filter(d => d.outcome === "validated").length;
+        const tbody = document.getElementById("tbody");
+        if (!data.length) {
+          tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:#7A8499">No decisions yet.</td></tr>`;
+          return;
+        }
+        tbody.innerHTML = data.map(d => `
+          <tr>
+            <td>${d.id}</td>
+            <td><strong>${d.ticker}</strong></td>
+            <td>${d.action}</td>
+            <td>${d.conviction}/5</td>
+            <td><span class="badge ${d.outcome}">${d.outcome}</span></td>
+            <td><span class="badge ${d.status}">${d.status}</span></td>
+          </tr>`).join("");
+        clearError();
+      } catch(e) {
+        showError("Backend unreachable — is the API running on localhost:8000?");
+      }
+    }
+
+    async function addDecision() {
+      const tok = await ensureToken();
+      if (!tok) return;
+      const ticker = document.getElementById("new-ticker").value.trim().toUpperCase();
+      const rat    = document.getElementById("new-rat").value.trim();
+      if (!ticker || rat.length < 10) { showError("Ticker and rationale (10+ chars) required."); return; }
+      try {
+        const r = await fetch(`${API}/decisions`, {
+          method: "POST",
+          headers: {"Content-Type":"application/json","Authorization":`Bearer ${tok}`},
+          body: JSON.stringify({ticker, action:"Buy", conviction:3, rationale:rat,
+                                evidence_ids:[], workflow_breadcrumb:["HTML Dashboard"]})
+        });
+        if (!r.ok) { showError(await r.text()); return; }
+        document.getElementById("new-ticker").value = "";
+        document.getElementById("new-rat").value = "";
+        clearError();
+        await refreshAll();
+      } catch(e) { showError("Backend unreachable."); }
+    }
+
+    async function refreshAll() {
+      await loadDecisions();
+      document.getElementById("updated").textContent =
+        "Last updated: " + new Date().toLocaleTimeString();
+    }
+
+    refreshAll();
+  </script>
+</body>
+</html>

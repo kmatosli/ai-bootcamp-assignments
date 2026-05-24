@@ -1,0 +1,139 @@
+/* Caduceus brand system */
+:root {
+  --ink:       #2C333E;
+  --core-blue: #0F4C81;
+  --provence:  rgb(104,137,192);
+  --baby-blue: rgb(179,205,224);
+  --bg:        #F7F8FA;
+  --card-bg:   #FFFFFF;
+  --border:    #E2E8F0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--ink);
+  color: white;
+  padding: 48px 24px 32px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: white;
+}
+
+.tagline {
+  color: var(--baby-blue);
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+nav {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+nav a {
+  color: var(--baby-blue);
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: white; }
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+section {
+  margin-bottom: 56px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--core-blue);
+  border-bottom: 3px solid var(--core-blue);
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+section p {
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+article {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.2s;
+}
+
+article:hover {
+  box-shadow: 0 4px 16px rgba(15,76,129,0.1);
+}
+
+article h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--core-blue);
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 0.9rem;
+  color: #5A6478;
+  margin: 0;
+}
+
+/* Skills */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px 14px;
+  border-left: 3px solid var(--core-blue);
+  margin-bottom: 10px;
+  background: var(--card-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background: var(--ink);
+  color: var(--baby-blue);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}

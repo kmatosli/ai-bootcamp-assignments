@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caduceus - Live Search</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 24px; background: #f7f8fa; color: #2C333E; }
+    h1 { color: #0F4C81; }
+    input { width: 100%; padding: 10px 14px; font-size: 16px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; margin-bottom: 8px; }
+    #count { font-size: 13px; color: #7A8499; margin-bottom: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .card h3 { margin: 0 0 6px; font-size: 15px; color: #0F4C81; }
+    .card p { margin: 2px 0; font-size: 13px; color: #7A8499; }
+    .tag { display: inline-block; background: #EEF2FF; color: #0F4C81; border-radius: 4px; padding: 2px 8px; font-size: 11px; margin-top: 8px; }
+    #status { color: #7A8499; font-style: italic; }
+    .error { color: #A54A3A; }
+  </style>
+</head>
+<body>
+  <h1>⚕️ Caduceus Company Search</h1>
+  <p>Search Phase 1 pharma universe via JSONPlaceholder (demo data)</p>
+  <input type="text" id="search" placeholder="Search by name or email..." oninput="filterCards()">
+  <div id="count"></div>
+  <div id="status">Loading companies...</div>
+  <div class="grid" id="grid"></div>
+
+  <script>
+    let allUsers = [];
+
+    async function loadUsers() {
+      try {
+        const resp = await fetch("https://jsonplaceholder.typicode.com/users");
+        if (!resp.ok) throw new Error("Fetch failed: " + resp.status);
+        allUsers = await resp.json();
+        // Remap to pharma context
+        const tickers = ["PFE","MRK","JNJ","ABBV","BMY","LLY","AMGN","GILD","NVO","AZN"];
+        allUsers = allUsers.map((u, i) => ({
+          ...u,
+          ticker: tickers[i] || "N/A",
+          name: u.company.name,
+          email: u.username.toLowerCase() + "@rhenman.com",
+          role: u.company.bs.split(" ")[0],
+        }));
+        document.getElementById("status").textContent = "";
+        renderCards(allUsers);
+      } catch (e) {
+        document.getElementById("status").innerHTML = `<span class="error">Error loading data: ${e.message}</span>`;
+      }
+    }
+
+    function renderCards(users) {
+      const grid = document.getElementById("grid");
+      const count = document.getElementById("count");
+      count.textContent = `Showing ${users.length} of ${allUsers.length} companies`;
+      grid.innerHTML = users.map(u => `
+        <div class="card">
+          <h3>${u.ticker} &mdash; ${u.name}</h3>
+          <p>${u.email}</p>
+          <p>${u.address.city}, ${u.address.zipcode}</p>
+          <span class="tag">${u.role}</span>
+        </div>
+      `).join("");
+    }
+
+    function filterCards() {
+      const q = document.getElementById("search").value.toLowerCase();
+      const filtered = allUsers.filter(u =>
+        u.name.toLowerCase().includes(q) ||
+        u.email.toLowerCase().includes(q) ||
+        u.ticker.toLowerCase().includes(q)
+      );
+      renderCards(filtered);
+    }
+
+    loadUsers();
+  </script>
+</body>
+</html>

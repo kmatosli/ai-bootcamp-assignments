@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathy Matosli - Portfolio</title>
+  <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kathy Matosli</h1>
+    <p class="tagline">Quant Developer &mdash; Healthcare Equity &mdash; Rhenman &amp; Partners</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Quant Developer specialising in healthcare equity decision-support infrastructure.
+        My work sits at the intersection of financial data engineering, AI-assisted analysis,
+        and institutional investment processes. I am currently building Caduceus, a decision-support
+        platform for the analysts and portfolio managers at Rhenman &amp; Partners, a Stockholm-based
+        long/short healthcare equity fund.
+      </p>
+      <p>
+        Previously I worked across capital markets data and financial services. I am completing
+        the Coding Temple AI Bootcamp while delivering Caduceus as a real production system.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article>
+          <h3>Caduceus Decision-Support Platform</h3>
+          <p>
+            A full-stack healthcare equity platform for Rhenman &amp; Partners. Ingests data from
+            19 sources including SEC EDGAR, FDA Orange Book, Purple Book, and CT.gov. Features
+            a FastAPI backend, Streamlit dashboard, and React frontend with a decision registry,
+            AI copilot, and materiality-ranked attention queue.
+          </p>
+        </article>
+        <article>
+          <h3>Caduceus Decision API (Module 5)</h3>
+          <p>
+            Production-grade FastAPI backend with JWT authentication, full CRUD on the decision
+            registry, soft-delete never-delete pattern, activity logging background tasks,
+            and 20 passing pytest tests. Deployed with SQLite for development and Supabase
+            Postgres for production.
+          </p>
+        </article>
+        <article>
+          <h3>Catalyst Events Puller</h3>
+          <p>
+            A yfinance-powered earnings calendar puller that loads forward-looking and historical
+            earnings dates for the Phase 1 pharma universe into Supabase. Implements the Wall
+            Street Horizon LERI methodology — detecting late reporters as a negative surprise
+            signal. 200 rows loaded covering 24 quarters per ticker.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python &mdash; FastAPI, SQLAlchemy, Pandas, yfinance, edgartools</li>
+        <li>Data Engineering &mdash; SEC EDGAR XBRL, FDA APIs, CT.gov, Supabase / PostgreSQL</li>
+        <li>AI / ML &mdash; Anthropic Claude API, RAG pipelines, pgvector, prompt engineering</li>
+        <li>Frontend &mdash; Streamlit, React / TypeScript, TanStack Router, Plotly</li>
+        <li>DevOps &mdash; Git, Docker, Alembic migrations, GitHub Actions</li>
+        <li>Finance &mdash; Healthcare equity analysis, DCF / SOTP valuation, EDGAR XBRL</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kathy Matosli &mdash; Caduceus / Rhenman &amp; Partners</p>
+  </footer>
+</body>
+</html>
