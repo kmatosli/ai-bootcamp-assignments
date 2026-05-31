@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+*.db
+module-05-06/
+module-06/bootstrap.py
+module-06/write_assignments.py
