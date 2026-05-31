@@ -1,0 +1,4 @@
+fastapi>=0.115
+uvicorn[standard]
+pydantic[email]>=2.12
+email-validator
